@@ -10,3 +10,15 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+TEST_CASE("GCD 1"){
+	REQUIRE(find_gcd(15,25) == 5);
+}
+
+TEST_CASE("GCD 2"){
+	REQUIRE(find_gcd(16,32) == 16);
+}
+
+TEST_CASE("GCD 3"){
+	REQUIRE(find_gcd(159,309) == 3);
+}
