@@ -28,12 +28,12 @@ bool is_prime(int number){
 
 // Primes finder
 
-// void get_primes(int number){
-//     for(int i = 2; i <= number; i ++){
-//         if(is_prime(i)){
-//             return i;
-//             }
-//         else {continue;}
-//     return ;
-//     }
-// }
+vector<int> get_primes(int number){
+    vector<int> primes;
+    for (int i = 2; i <= number; i++) {
+        if (is_prime(i)) {
+            primes.push_back(i);
+        }
+    }
+    return primes;
+}

@@ -23,6 +23,23 @@ TEST_CASE("Prime check 3"){
 	REQUIRE(is_prime(22) == false);
 }
 
-TEST_CASE("Prime check 4"){
-	REQUIRE(is_prime(47) == true);
+#include<vector>
+TEST_CASE("Get primes 1"){
+	std::vector<int> tester{2,3,5,7};
+	REQUIRE(get_primes(10) == tester);
+}
+
+TEST_CASE("Get primes 2"){
+	std::vector<int> tester{2,3,5,7,11,13};
+	REQUIRE(get_primes(15) == tester);
+}
+
+TEST_CASE("Get primes 3"){
+	std::vector<int> tester{2,3,5,7,11,13,17,19,23,29};
+	REQUIRE(get_primes(30) == tester);
+}
+
+TEST_CASE("Get primes 4"){
+	std::vector<int> tester{2,3,5,7,11,13,17,19,23,29,31,37,41,43,47};
+	REQUIRE(get_primes(50) == tester);
 }
